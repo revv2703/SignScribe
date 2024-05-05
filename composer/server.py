@@ -1,6 +1,4 @@
 from flask import Flask, send_file
-# from composer import main
-# import main
 import composer.composer_main as composer_main
 
 app = Flask(__name__)

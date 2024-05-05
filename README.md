@@ -10,7 +10,7 @@ SignScribe is a web application built with Streamlit and Python that bridges the
 
 To run SignScribe, you'll need the following:
 
-* Python 3.x (with required libraries: Streamlit, OpenCV, and appropriate machine learning frameworks for your chosen models)
+* Python 3.x (with required libraries: OpenCV, and appropriate machine learning frameworks for your chosen models)
 * A webcam
 
 1. Clone this repository:

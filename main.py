@@ -1,6 +1,5 @@
-import subprocess
 from composer.server import app
-from interpreter.interpreter_main import real_time_asl
+from interpreter.checking_output import real_time_asl
 
 
 

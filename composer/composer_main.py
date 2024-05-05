@@ -4,17 +4,14 @@ import threading
 import time
 import os
 import speech_recognition as sr
-# from keras.models import load_model
 from PIL import Image
 
 # Constants
 image_x, image_y = 64, 64
-op_dest = "C:/Codes/Codes/Python/Random progs/convertor/two-way-sign-language-translator/filtered_data/"
-alpha_dest = "C:/Codes/Codes/Python/Random progs/convertor/two-way-sign-language-translator/alphabet/"
+op_dest = "composer/filtered_data/"
+alpha_dest = "composer/alphabet/"
 model_path = 'model.h5'
 
-# Load the pre-trained model
-# classifier = load_model(model_path)
 
 # Global variables
 dirListing = os.listdir(op_dest)
@@ -107,18 +104,12 @@ def main():
     print("\nChoose an option:")
     print("1. Voice to Sign")
     print("2. Exit")
-    # choice = input("Enter your choice: ")
     choice = '1'
     while True:
-        if choice == '1':
-            text_input = hear_voice()
-            if text_input:
-                func(text_input)
-        elif choice == '2':
-            print("Exiting...")
-            break
-        else:
-            print("Invalid choice. Please try again.")
+        text_input = hear_voice()
+        if text_input:
+            func(text_input)
+        
 
 # Run main function if the file is executed directly
 if __name__ == "__main__":
